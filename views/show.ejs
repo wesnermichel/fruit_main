@@ -1,0 +1,21 @@
+<%- include('./partials/header.ejs') %>
+    <h1>This is the show page for <%= fruit.name %> </h1>
+
+    <p>The <%= fruit.name %> is <%= fruit.color %> </p>
+
+    <% if(fruit.readyToEat === true) { %>
+      <p> It is ready to eat </p>
+    <% } else { %>
+      <p> It is NOT ready to eat </p>
+    <% } %>
+
+    <h2>Use &lt;% %&gt; for STATEMENTS</h2>
+    <h2>Use &lt;%= %&gt; for VALUES</h2>
+
+    <p>A template is HTML that has places where you can insert data from you code. The process of inserting data into a template and sending back the completed html file is called <strong>rendering</strong> a template</p>
+
+   <p>You RENDER TEMPLATES.</p>
+   <a href="/fruits/<%=fruit.id%>/edit">
+    <button>EDIT</button>
+  </a>
+  <%- include('./partials/footer.ejs') %>

@@ -1,0 +1,20 @@
+<%- include('./partials/header.ejs') %>
+    <h1>Add a fruit (fruit "new" page)</h1>
+
+    <form method="POST" action="/fruits">
+      <fieldset>
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name" placeholder="Enter new fruit name">
+      </fieldset>
+      <fieldset>
+        <label for="color">Color:</label>
+        <input id="color" type="text" name="color" placeholder="Enter new fruit name">
+      </fieldset>
+      <fieldset>
+        <label for="readyToEat">Ready to eat?</label>
+        <input id="readyToEat" type="checkbox" name="readyToEat">
+      </fieldset>
+      <button>Add the Fruit!</button>
+    </form>
+
+  <%- include('./partials/footer.ejs') %>
